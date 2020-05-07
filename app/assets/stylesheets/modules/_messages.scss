@@ -30,7 +30,7 @@ $selectcolor: #ffffff;
     &__edit {
       width: 60px;
       text-align: right;
-      &-icons {
+      &--icons {
         text-decoration: none;
         color: $selectcolor;
         margin-left: 5px;
@@ -79,7 +79,7 @@ $selectcolor: #ffffff;
     }
   }
   &__edit {
-    &-btn {
+    &--btn {
       height: 40px;
       width: 72px;
       text-decoration: none;
@@ -105,7 +105,7 @@ $selectcolor: #ffffff;
       margin-bottom: 15px;
       color: #333333;
       font-size: 16px;
-      &-created_at {
+      &--created_at {
         color: #999999;
         font-size: 12px;
         margin-left: 5px;
@@ -133,7 +133,7 @@ $selectcolor: #ffffff;
     height: 50px;
     background-color: $selectcolor;
     &__text {
-      &-message {
+      &--message {
         height: 50px;
         width: calc(100vw - 495px);
         border: none;
@@ -144,7 +144,7 @@ $selectcolor: #ffffff;
       position: absolute;
       right: 10px;
       line-height: 50px;
-      &-file {
+      &--file {
         display: none;
       }
     }
