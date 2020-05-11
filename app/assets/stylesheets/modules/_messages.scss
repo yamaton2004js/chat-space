@@ -44,13 +44,17 @@ $selectcolor: #ffffff;
   background-color: #2f3e51;
   &__box {
     padding: 20px 20px 40px;
-    color: $selectcolor;
+    &--icon {
+      text-decoration: none;
+    }
     &__name {
       font-size: 15px;
+      color: $selectcolor;
     }
     &__message {
       font-size: 11px;
       margin-top: 5px;
+      color: $selectcolor;
     }
   }
 }
@@ -118,6 +122,35 @@ $selectcolor: #ffffff;
   }
 }
 
+// .form {
+//   height: 90px;
+//   width: calc(100vw - 300px);
+//   background-color: #d2d2d2;
+//   display: flex;
+//   align-items: center;
+//   padding: 0 40px;
+//   &__message {
+//     display: inline-block;
+//   }
+//   &__mask {
+//     display: inline-block;
+//     &__image {
+//       &--hiden {
+//         display: none;
+//       }
+//     }
+//   }
+//   &__submit {
+//     display: inline-block;
+//     width: 100px;
+//     height: 50px;
+//     background-color: #38aef0;
+//   }
+// }
+
+
+
+
 .main-form {
   height: 90px;
   width: calc(100vw - 300px);
@@ -133,12 +166,10 @@ $selectcolor: #ffffff;
     height: 50px;
     background-color: $selectcolor;
     &__text {
-      &--message {
         height: 50px;
         width: calc(100vw - 495px);
         border: none;
         padding: 0 40px 0 10px;
-      }
     }
     &__image {
       position: absolute;
@@ -150,11 +181,13 @@ $selectcolor: #ffffff;
     }
   }
   &__submit {
+    &--btn {
     width: 100px;
     height: 50px;
     color: $selectcolor;
     background-color: #38aef0;
     cursor: pointer;
+    }
   }
 
 }
