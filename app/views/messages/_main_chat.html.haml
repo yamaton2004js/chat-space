@@ -14,16 +14,6 @@
   .main-contents
     = render @messages
 
-
-  -# .form
-  -#   = form_for [@group, @message] do |f|
-  -#     = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-  -#     .form__mask
-  -#       = f.label :image, class: 'form__mask__image' do
-  -#         = icon('fas', 'image', class: 'icon')
-  -#         = f.file_field :image, class: 'hidden'
-  -#     = f.submit 'Send', class: 'form__submit'
-
   = form_for [@group, @message] do |f|
     .main-form
       .main-form__box
@@ -32,4 +22,4 @@
           = icon("fas", "image")
           = f.file_field :image,  class: 'main-form__box__image--file'
       .main-form__submit
-        = f.submit 'send', class: 'main-form__submit--btn'
+        = f.submit 'send', class: 'main-form__submit--btn', 'data-disable-with': false
