@@ -53,7 +53,7 @@ $(function() {
       $('.main-contents').animate({ scrollTop: $('.main-contents')[0].scrollHeight});
       $('form')[0].reset();
     })
-    fail(function() {
+    .fail(function() {
       alert('メッセージ送信に失敗しました');
     });
   });
