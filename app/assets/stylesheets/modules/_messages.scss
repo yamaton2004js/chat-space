@@ -102,6 +102,7 @@ $selectcolor: #ffffff;
   height: calc(100vh - 190px);
   width: calc(100vw - 300px);
   background-color: #fafafa;
+  overflow: scroll;
   &__box {
     padding: 35px 0 46px 40px;
     &__name {
