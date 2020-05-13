@@ -52,7 +52,9 @@ $(function() {
       $('.main-contents').append(html);
       $('.main-contents').animate({ scrollTop: $('.main-contents')[0].scrollHeight});
       $('form')[0].reset();
-
     })
+    fail(function() {
+      alert('メッセージ送信に失敗しました');
+    });
   });
 });
